@@ -4,13 +4,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js(x)?$/,
+        test: /\.ts(x)?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: "ts-loader",
         },
         resolve: {
-          extensions: [".js", ".jsx"],
+          extensions: [".ts", ".tsx"],
         },
       },
       {
@@ -34,7 +34,7 @@ module.exports = {
       },
     ],
   },
-  entry: "./src/index.jsx",
+  entry: "./src/index.tsx",
   output: {
     filename: "main_v2.1.1.js",
     path: path.resolve(__dirname, "static", "frontend", "webpack_output"),
