@@ -6,7 +6,10 @@ import styles from "../landing_page.module.css";
 const desktop = () => {
   return (
     <Fragment>
-      <h1 className={styles.h1}>Welcome to the Song Maker Gallery!</h1>
+      <h1 className={styles.h1}>
+        Welcome to the <br />
+        Song Maker Gallery!
+      </h1>
       <table className={styles.table}>
         <tbody>
           <tr>
